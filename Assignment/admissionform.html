@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="/submit" method="post">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="First Name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Last Name">
+
+            <label for="Email">Email Id</label>
+            <input type="text" id="email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="gender">Gender</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" class="gender-button">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female" class="gender-button">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other" class="gender-button">Other</label>
+            </div>
+
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="BE-CSE">BE-CSE</option>
+                <option value="BE-EE">BE-EE</option>
+                <option value="BE-ME">BE-ME</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
