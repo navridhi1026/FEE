@@ -1,0 +1,24 @@
+*{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#fruits{
+    color: red;
+    border: 2px solid green;
+}
+.a1{
+    color: green;
+    text-decoration: line-through;
+    font-weight: 800;
+}
+p{
+    background-color: pink;
+}
+input[type="text"]{
+    background-color:orange;
+}
+
+::placeholder{
+    background-color: aqua
+}
